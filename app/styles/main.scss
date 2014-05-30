@@ -39,10 +39,14 @@ body, html {
 
 #welcome-container-column {
 	z-index: 1;
+
+	padding: 0;
 }
 
 #welcome-container {
 	text-align: center;
+
+	background: $sw-gray;
 
 	> header {
 		display: inline-block;
@@ -57,18 +61,6 @@ body, html {
 	@media (min-width: 769px) {
 		margin-top: 200px;
 	}
-}
-
-#welcome-container:before {
-	content: '';
-	display: block;
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 271px;
-	background: $sw-gray;
-
-	z-index: -1;
 }
 
 #welcome-to {
