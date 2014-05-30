@@ -1,0 +1,11 @@
+TODO:
+
+- JavaScript compilation (remove unnecessary files)
+- Remove unnecessary Bootstrap styles
+- Robots.txt review
+- Humans.txt review
+- HTML review
+- Google analytics
+- SEO
+- Review .htaccess
+- 404.txt
