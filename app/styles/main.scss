@@ -16,45 +16,44 @@ body, html {
 	height: 100%;
 }
 
-.center-container {
+.screen-size {
 	height: 100%;
-	margin-bottom: 0;
-
-	text-align: center;
-
-	@media (max-width:300px) {
-		width: 300px;
-	}
-}
-
-.center-container:before { //Ghost for centeting
-	content: '';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-	margin-left: -0.25em;
-}
-
-.center {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: left;
 }
 
 #first-page {
-	width: 273px;
-
 	img {
-		margin: 0 auto;
+		margin: 60px auto 0 auto;
 		height: 217px;
+	}
+
+	@media (min-width: 769px) {
+		background-image: url("../images/bujinkanLogo.jpg");
+		background-repeat: no-repeat;
+		background-position: -110px 280%;
+		background-size: auto 90%;
 	}
 }
 
-#welcome-container {
-	margin-top: 20px;
-	padding: 20px;
+#welcome-container-column {
+	z-index: 1;
+}
 
-	z-index: 0;
+#welcome-container {
+	padding: 20px;
+	text-align: center;
+
+	> header {
+		display: inline-block;
+		text-align: left;
+	}
+
+	@media (max-width: 768px) {
+		margin-top: 20px;
+	}
+
+	@media (min-width: 769px) {
+		margin-top: 200px;
+	}
 }
 
 #welcome-container:before {
