@@ -5,6 +5,9 @@ $sw-gray: rgba(0,0,0,0.5);
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
+@import url(http://fonts.googleapis.com/css?family=Shojumaru);
+
+
 .browsehappy {
 	margin: 0.2em 0;
 	background: #ccc;
@@ -39,12 +42,12 @@ body, html {
 }
 
 #welcome-container {
-	padding: 20px;
 	text-align: center;
 
 	> header {
 		display: inline-block;
 		text-align: left;
+		padding: 20px;
 	}
 
 	@media (max-width: 768px) {
@@ -62,28 +65,30 @@ body, html {
 	position: absolute;
 	left: 0;
 	width: 100%;
-	height: 217px;
-	margin-top: -20px;
+	height: 271px;
 	background: $sw-gray;
 
 	z-index: -1;
 }
 
 #welcome-to {
-	font-size: 20px;
+	margin-bottom: 10px;
+	font-size: 23px;
 	font-weight: bold;
 	color: white;
 }
 
 #sw {
+	font-family: 'Shojumaru', cursive;
 	font-size: 60px;
+	line-height: 60px;
 	color: white;
 	font-weight: bold;
-	line-height: 50px;
 }
 
 #lk {
-	font-size: 35px;
+	margin-top: 10px;
+	font-size: 42px;
 	color: white;
 	font-weight: bold;
 }
