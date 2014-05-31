@@ -26,13 +26,23 @@ body, html {
 	img {
 		margin: 60px auto 0 auto;
 		height: 217px;
-	}
 
+		@media (min-width: 769px) {
+			margin: 0;
+			position: absolute;
+
+			height: 90%;
+			left: -110px;
+			top: 25%;
+		}
+	}
+}
+
+#first-page-image-container {
 	@media (min-width: 769px) {
-		background-image: url("../images/bujinkanLogo.jpg");
-		background-repeat: no-repeat;
-		background-position: -110px 280%;
-		background-size: auto 90%;
+		height: 100%;
+		width: 100%;
+		position: absolute;
 	}
 }
 
