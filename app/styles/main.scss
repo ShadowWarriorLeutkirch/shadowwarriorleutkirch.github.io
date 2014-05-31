@@ -7,7 +7,6 @@ $sw-gray: rgba(0,0,0,0.5);
 
 @import url(http://fonts.googleapis.com/css?family=Shojumaru);
 
-
 .browsehappy {
 	margin: 0.2em 0;
 	background: #ccc;
@@ -37,29 +36,28 @@ body, html {
 	}
 }
 
-#welcome-container-column {
-	z-index: 1;
-
-	padding: 0;
-}
-
-#welcome-container {
-	text-align: center;
-
-	background: $sw-gray;
-
-	> header {
-		display: inline-block;
-		text-align: left;
-		padding: 20px;
-	}
-
-	@media (max-width: 768px) {
-		margin-top: 20px;
-	}
+#first-page-text-row {
+	margin-top: 20px;
 
 	@media (min-width: 769px) {
 		margin-top: 200px;
+	}
+}
+
+#first-page-text-column {
+	background: $sw-gray;
+}
+
+#first-page-text-container {
+	padding: 20px;
+
+	@media (max-width: 768px) {
+		text-align: center;
+
+		> header {
+			display: inline-block;
+			text-align: left;
+		}
 	}
 }
 
