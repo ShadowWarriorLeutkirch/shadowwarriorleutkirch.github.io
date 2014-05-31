@@ -1,12 +1,86 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$sw-gray: rgba(0,0,0,0.5);
 
 // bower:scss
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
+
+@import url(http://fonts.googleapis.com/css?family=Shojumaru);
+
 
 .browsehappy {
 	margin: 0.2em 0;
 	background: #ccc;
 	color: #000;
 	padding: 0.2em 0;
+}
+
+body, html {
+	height: 100%;
+}
+
+.screen-size {
+	height: 100%;
+}
+
+#first-page {
+	img {
+		margin: 60px auto 0 auto;
+		height: 217px;
+	}
+
+	@media (min-width: 769px) {
+		background-image: url("../images/bujinkanLogo.jpg");
+		background-repeat: no-repeat;
+		background-position: -110px 280%;
+		background-size: auto 90%;
+	}
+}
+
+#welcome-container-column {
+	z-index: 1;
+
+	padding: 0;
+}
+
+#welcome-container {
+	text-align: center;
+
+	background: $sw-gray;
+
+	> header {
+		display: inline-block;
+		text-align: left;
+		padding: 20px;
+	}
+
+	@media (max-width: 768px) {
+		margin-top: 20px;
+	}
+
+	@media (min-width: 769px) {
+		margin-top: 200px;
+	}
+}
+
+#welcome-to {
+	margin-bottom: 10px;
+	font-size: 23px;
+	font-weight: bold;
+	color: white;
+}
+
+#sw {
+	font-family: 'Shojumaru', cursive;
+	font-size: 60px;
+	line-height: 60px;
+	color: white;
+	font-weight: bold;
+}
+
+#lk {
+	margin-top: 10px;
+	font-size: 42px;
+	color: white;
+	font-weight: bold;
 }
