@@ -3,7 +3,7 @@ $link-color: lighten(#484848, 10%);
 $link-hover-color: lighten($link-color, 15%);
 
 // bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+@import 'bootstrap.scss';
 // endbower
 
 .browsehappy {
