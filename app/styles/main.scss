@@ -1,11 +1,9 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-$fa-font-path: "../../bower_components/components-font-awesome/fonts";
 $link-color: lighten(#484848, 10%);
 $link-hover-color: lighten($link-color, 15%);
 
 // bower:scss
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
-@import '../../bower_components/components-font-awesome/scss/font-awesome.scss';
 // endbower
 
 .browsehappy {
@@ -43,7 +41,6 @@ body {
 	}
 
 	.kanji {
-		white-space: pre;
 		text-align: right;
 
 		font-size: 2.6em;
