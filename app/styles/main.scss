@@ -1,17 +1,8 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-$sw-gray: rgba(0,0,0,0.5);
 
 // bower:scss
 @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
-
-@import url(http://fonts.googleapis.com/css?family=Shojumaru);
-
-@mixin imageContainer(){
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
 
 .browsehappy {
 	margin: 0.2em 0;
@@ -20,144 +11,51 @@ $sw-gray: rgba(0,0,0,0.5);
 	padding: 0.2em 0;
 }
 
-body, html {
+body, html{
 	height: 100%;
 }
 
-h2 {
-	font-size: 35px;
-}
+body {
+	background: #333333;
 
-.screen-size {
-	height: 100%;
+	background-image: url("../images/bujinkanLogo.jpg");
+	background-repeat: no-repeat;
+	background-position: -130px 210%;
+	background-size: auto 85%;
 }
 
 #first-page {
-	img {
-		display: block;
-		margin: 60px auto 0 auto;
-		height: 217px;
+	color: white;
 
-		@media (min-width: 768px) {
-			margin: 0;
-			position: absolute;
-
-			height: 90%;
-			left: -110px;
-			top: 25%;
-		}
-	}
-}
-
-#first-page-image-container {
-	@media (min-width: 768px) {
-		@include imageContainer();
-	}
-}
-
-#first-page-text-row {
-	margin-top: 20px;
-
-	@media (min-width: 768px) {
+	.row {
 		margin-top: 200px;
 	}
-}
 
-.inverted {
-	background: $sw-gray;
-	color: white;
-	font-weight: bold;
+	.kanji {
+		white-space: pre;
+		text-align: right;
 
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
+		font-size: 35px;
+	}
 
-#first-page-text-container {
-	padding: 20px;
+	p {
+		font-size: 22px;
+	}
 
-	@media (max-width: 767px) {
-		text-align: center;
+	#sw {
+		margin-top: 5px;
 
-		> header {
-			display: inline-block;
-			text-align: left;
-		}
+		font-size: 64px;
+		font-weight: bold;
+		line-height: 64px;
+	}
+
+	#bujinkan {
+		font-size: 30px;
+		margin-top: 0;
 	}
 }
 
-#welcome-to {
-	margin-bottom: 10px;
-	font-size: 23px;
-}
-
-#sw {
-	font-family: 'Shojumaru', cursive;
-	font-size: 60px;
-	line-height: 60px;
-}
-
-#lk {
-	margin-top: 10px;
-	font-size: 42px;
-}
-
-#second-page {
-	@media (min-width: 992px) {
-		.inverted {
-			padding-left: 8.33333%;
-		}
-
-		h2 {
-			padding-left: 15px;
-		}
-	}
-}
-
-#second-page-image-container {
-	@include imageContainer();
-
-	overflow: hidden;
-	text-align: center;
-
-	img {
-		opacity: 0.08;
-		height: 100%;
-		width: auto;
-	}
-
-
-	@media (min-width: 768px) {
-		text-align: left;
-
-		img {
-			width: 40%;
-			height: auto;
-			position: relative;
-			left: 50%;
-			opacity: 0.5;
-			margin-top: 5%;
-			margin-left: 5%;
-		}
-	}
-}
-
-#nimpo-row {
-	@media (min-width: 768px) {
-		margin-top: 90px;
-	}
-
-	@media (max-width: 767px) {
-		.inverted {
-			margin-top: 0;
-		}
-	}
-}
-
-#third-page-row {
-	font-size: 20px;
-	margin-top: 20px;
-}
-
-#contact {
-	font-size: 14px;
+.yellow {
+	color: #ffc600;
 }
