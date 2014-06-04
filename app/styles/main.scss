@@ -90,3 +90,24 @@ body {
 .yellow {
 	color: #ffc600;
 }
+
+.bottom-attached {
+	position: fixed;
+	bottom: 5px;
+
+	@media (max-height: 300px) {
+		position: relative;
+	}
+}
+
+.bottom-attached-left {
+	@extend .bottom-attached;
+
+	left: 10px;
+}
+
+.bottom-attached-right {
+	@extend .bottom-attached;
+
+	right: 10px;
+}
