@@ -1,17 +1,10 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-$sw-gray: rgba(0,0,0,0.5);
+$link-color: lighten(#484848, 10%);
+$link-hover-color: lighten($link-color, 15%);
 
 // bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+@import 'bootstrap.scss';
 // endbower
-
-@import url(http://fonts.googleapis.com/css?family=Shojumaru);
-
-@mixin imageContainer(){
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
 
 .browsehappy {
 	margin: 0.2em 0;
@@ -20,144 +13,128 @@ $sw-gray: rgba(0,0,0,0.5);
 	padding: 0.2em 0;
 }
 
-body, html {
+body, html{
 	height: 100%;
 }
 
-h2 {
-	font-size: 35px;
-}
+body {
+	color: white;
+	background: #333333;
 
-.screen-size {
-	height: 100%;
+	background-image: url("../images/bujinkanLogo.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	background-size: auto 100%;
+	background-attachment: fixed;
+
+	@media (min-width: 768px) {
+		background-size: auto 70%;
+	}
 }
 
 #first-page {
-	img {
-		display: block;
-		margin: 60px auto 0 auto;
-		height: 217px;
+	font-size: 9px;
 
-		@media (min-width: 768px) {
-			margin: 0;
-			position: absolute;
-
-			height: 90%;
-			left: -110px;
-			top: 25%;
-		}
+	.row {
+		margin-top: 50px;
 	}
-}
 
-#first-page-image-container {
+	.kanji {
+		text-align: right;
+
+		font-size: 2.6em;
+		margin-top: -0.1em;
+	}
+
+	p {
+		font-size: 1.6em;
+	}
+
+	#sw {
+		margin-top: 5px;
+
+		font-size: 4.60em;
+		font-weight: bold;
+	}
+
+	#bujinkan {
+		font-size: 2.15em;
+		margin-top: 0;
+	}
+
 	@media (min-width: 768px) {
-		@include imageContainer();
+		font-size: 10px;
 	}
-}
 
-#first-page-text-row {
-	margin-top: 20px;
-
-	@media (min-width: 768px) {
-		margin-top: 200px;
-	}
-}
-
-.inverted {
-	background: $sw-gray;
-	color: white;
-	font-weight: bold;
-
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-#first-page-text-container {
-	padding: 20px;
-
-	@media (max-width: 767px) {
-		text-align: center;
-
-		> header {
-			display: inline-block;
-			text-align: left;
-		}
-	}
-}
-
-#welcome-to {
-	margin-bottom: 10px;
-	font-size: 23px;
-}
-
-#sw {
-	font-family: 'Shojumaru', cursive;
-	font-size: 60px;
-	line-height: 60px;
-}
-
-#lk {
-	margin-top: 10px;
-	font-size: 42px;
-}
-
-#second-page {
 	@media (min-width: 992px) {
-		.inverted {
-			padding-left: 8.33333%;
+		.row {
+			margin-top: 100px;
 		}
+	}
 
-		h2 {
-			padding-left: 15px;
+	@media (min-width: 1200px) {
+		.row {
+			margin-top: 120px;
 		}
+	}
+
+	@media (min-width: 1360px) {
+		font-size: 12px;
+	}
+
+	@media (min-width: 1600px) {
+		font-size: 14px;
 	}
 }
 
-#second-page-image-container {
-	@include imageContainer();
+.yellow {
+	color: #ffc600;
+}
 
-	overflow: hidden;
-	text-align: center;
+.bottom-attached {
+	position: fixed;
+	bottom: 5px;
+}
 
-	img {
-		opacity: 0.08;
-		height: 100%;
-		width: auto;
+.bottom-attached-left {
+	@extend .bottom-attached;
+
+	left: 10px;
+}
+
+.bottom-attached-right {
+	@extend .bottom-attached;
+
+	right: 10px;
+}
+
+.google-plus {
+	font-size: 35px;
+
+	:hover {
+		color: #dd4b39;
+		text-shadow: 0px 0px 15px gray;
+
+		-webkit-transition: all 300ms linear;
+		-moz-transition: all 300ms linear;
+		-ms-transition: all 300ms linear;
+		-o-transition: all 300ms linear;
+		transition: all 300ms linear;
 	}
 
-
-	@media (min-width: 768px) {
-		text-align: left;
-
-		img {
-			width: 40%;
-			height: auto;
-			position: relative;
-			left: 50%;
-			opacity: 0.5;
-			margin-top: 5%;
-			margin-left: 5%;
-		}
+	a {
+		-webkit-transition: all 300ms linear;
+		-moz-transition: all 300ms linear;
+		-ms-transition: all 300ms linear;
+		-o-transition: all 300ms linear;
+		transition: all 300ms linear;
 	}
 }
 
-#nimpo-row {
-	@media (min-width: 768px) {
-		margin-top: 90px;
+a.impressum {
+	font-size: .8em;
+
+	@media (max-height: 300px) {
+		position: relative;
 	}
-
-	@media (max-width: 767px) {
-		.inverted {
-			margin-top: 0;
-		}
-	}
-}
-
-#third-page-row {
-	font-size: 20px;
-	margin-top: 20px;
-}
-
-#contact {
-	font-size: 14px;
 }
