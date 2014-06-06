@@ -48,6 +48,15 @@ body {
 
 	p {
 		font-size: 1.6em;
+
+		a {
+			color: white;
+		}
+
+		a:hover {
+			color: #ffc600;
+		}
+
 	}
 
 	#sw {
@@ -137,12 +146,4 @@ a.impressum {
 	@media (max-height: 300px) {
 		position: relative;
 	}
-}
-
-a {
-	color: white;
-}
-
-a:hover {
-	color: #ffc600;
 }
