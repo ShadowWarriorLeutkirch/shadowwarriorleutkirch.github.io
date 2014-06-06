@@ -1,0 +1,6 @@
+TODO:
+
+- Robots.txt
+- Humans.txt
+- Google analytics
+- SEO
